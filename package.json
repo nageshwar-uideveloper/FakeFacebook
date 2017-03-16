@@ -11,6 +11,10 @@
   },
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nageshwar-uideveloper/FakeFacebook.git"
+  },
   "dependencies": {
     "babel-core": "^6.17.0",
     "babel-loader": "^6.2.5",
