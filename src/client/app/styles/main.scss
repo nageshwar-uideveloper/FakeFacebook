@@ -1,0 +1,195 @@
+$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+$border-radius-base: 0 !default;
+@import "~bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "~font-awesome/css/font-awesome.css";
+@import  url('https://fonts.googleapis.com/css?family=Josefin+Sans|Raleway|Slabo+27px|Quicksand|Sanchez|Nixie+One');
+
+$colors: (
+    white: #FFF,
+    light-white: #999,
+    heavy-white: #DDD,
+    black: #000,
+    light-black: #666,
+    heavy-black: #333
+);
+
+@mixin setMargin($up,$right,$bottom,$left){
+    margin: $up $right $bottom $left;
+}
+
+$noOutline: none !important;
+
+//base
+*:focus{
+    outline: $noOutline;
+}
+body{
+    background-color: #DFDFDF;
+    font-family: 'Quicksand', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+.nopadding{
+    padding: 0;
+}
+.noborder{
+    border: none !important;
+}
+.form-horizontal{
+    margin: 0;
+}
+.form-horizontal .form-group{
+    margin-left: 0;
+    margin-right: 0;
+}
+.form-horizontal .form-group:last-child{
+    margin-bottom: 0;
+}
+textarea{
+    resize: vertical;
+}
+
+//login
+.loginFormWrapper .form-horizontal{
+    margin: 0;
+    margin-bottom: 5px;
+}
+.loginFormWrapper .form-group{
+    margin: 0;
+    margin-bottom: 20px;
+}
+.loginFormWrapper .control-label{
+    padding: 5px 0;
+    font-family: 'Nixie One', sans-serif;
+}
+.loginFormWrapper .form-control{
+    font-family: 'Raleway', sans-serif;
+}
+
+.block-title, .content-title, .page-title{
+    font-family: 'Nixie One', sans-serif;
+    margin-bottom: 5px;
+}
+
+.btnVoteUp,.btnVoteDown{
+    @include setMargin(0,5px,0,5px);
+}
+
+
+//header
+.headerContainer{
+    background-color: #3b5998;
+}
+.headerContainer .navbar-top-header .navbar-brand{
+    padding: 6px;
+    margin: 0;
+    color: #FFF;
+}
+.headerContainer .navbar-default{
+    background: none;
+    border: none;
+    margin: 0;
+}
+.headerContainer .navbar-default .navbar-nav > li > a{
+    color: #FFF;
+}
+.headerContainer .navbar-top-header .navbar-form .input-group{
+    width: 100%;
+}
+.headerContainer .navbar-default .navbar-nav > li > a.nav-icon{
+    position: relative;
+    padding: 18px 10px;
+    color: #333;
+}
+.headerContainer .nav-icon .count{
+    position: absolute;
+    top: 8px;
+    right: 3px;
+    background-color: red;
+    color: #fff;
+    padding: 2px 4px 3px 4px;
+    font-size: 9px;
+    font-weight: bold;
+    font-family: 'Nixie One', sans-serif;
+    border-radius: 10px;
+    line-height: 9px;
+}
+
+
+// file
+.addPostFormContainer{
+    background-color: #FFF;
+    margin: 10px 0;
+}
+.addPostFormContainer .form-group{
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+.addPostFormContainer .addPostInput textarea{
+    border: none;
+    box-shadow: none;
+    font-size: 24px;
+    color: #666;
+}
+.addPostFormContainer .addPostHeader{
+    padding: 10px;
+    margin: 0;
+}
+.addPostFormContainer .addPostFooter{
+    background-color: #EFEFEF;
+    padding: 10
+}
+.fileUploadWrapper{
+    display: inline-block;
+    margin: 5px;
+}
+.fileUploadWrapper:first-child{
+    margin-left: 0;
+}
+.fileUploadWrapper .fileUploadButton span{
+    padding: 0 5px;
+}
+
+//post
+.postWrapper{
+    position: relative;
+    background-color: white;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+.postWrapper .postActions{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.post-header{
+    overflow: hidden;
+}
+.post-header .post-header-image,
+.post-header .post-header-desc{
+    float: left;
+}
+.post-header .post-header-image{
+    width: 8%;
+}
+.post-header .post-header-desc{
+    width: 90%;
+}
+.post-header .post-header-image img{
+    padding: 5px;
+    width: 100%;
+}
+.post-header .post-header-title{
+    font-weight: bold;
+    padding: 3px 0;
+}
+
+//add post
+
+
+//dropdown menu
+.input-group-blank .input-group-addon{
+    background: none;
+    border-color: transparent;
+}
